@@ -9672,3 +9672,68 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+ /* logo sections */
+/* Section Headings */
+.section-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  color: #222;
+}
+
+.section-subheading {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 400;
+}
+
+/* Logo Slider Styles */
+.logo-slider-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.logo-slider {
+  overflow: hidden;
+  height: 120px; /* Increased height for bigger logos */
+}
+
+.logo-track {
+  display: flex;
+  animation: scroll 25s linear infinite;
+}
+
+.logo-slide {
+  flex: 0 0 220px; /* Slightly wider for bigger logos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.logo-slide img {
+  max-height: 90px; /* Increased logo size for better visibility */
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo-slide img:hover {
+  transform: scale(1.1);
+}
+
+/* Pause on hover */
+.logo-slider:hover .logo-track {
+  animation-play-state: paused;
+}
+
+/* Keyframes for the continuous scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
