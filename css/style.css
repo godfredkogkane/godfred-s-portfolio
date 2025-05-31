@@ -9697,11 +9697,13 @@ textarea.form-control {
 .logo-slider {
   overflow: hidden;
   height: 120px; /* Increased height for bigger logos */
+  position: relative;
 }
 
 .logo-track {
   display: flex;
-  animation: scroll 25s linear infinite;
+  width: calc(220px * 20); /* 12 logos, each 220px wide, to ensure smooth looping */
+  animation: scroll 40s linear infinite;
 }
 
 .logo-slide {
@@ -9736,4 +9738,31 @@ textarea.form-control {
     transform: translateX(-50%);
   }
 }
+/* Graphic Design Sample Gallery */
+#sample-designs-section .sample-design {
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+#sample-designs-section .sample-design img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+#sample-designs-section .sample-design:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+#sample-designs-section .sample-design p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 0;
+}
