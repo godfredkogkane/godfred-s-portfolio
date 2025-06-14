@@ -9702,7 +9702,7 @@ textarea.form-control {
 
 .logo-track {
   display: flex;
-  width: calc(220px * 20); /* 12 logos, each 220px wide, to ensure smooth looping */
+  width: calc(220px * 22); /* 12 logos, each 220px wide, to ensure smooth looping */
   animation: scroll 40s linear infinite;
 }
 
